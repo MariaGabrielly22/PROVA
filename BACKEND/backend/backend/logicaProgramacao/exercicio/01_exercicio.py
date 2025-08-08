@@ -3,7 +3,8 @@ saldo = 0
 
 print(f"Bem-vindo, {nome}")
 
-while True:
+opcao = ""
+while opcao != "4":
     print("\n1. Depositar")
     print("2. Sacar")
     print("3. Ver Saldo")
@@ -39,4 +40,4 @@ while True:
             break
             
         case _:
-            print("Opção inválida!")
+            print("Opção inválida")

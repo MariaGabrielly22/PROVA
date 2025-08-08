@@ -1,8 +1,8 @@
-# for
+
 for i in range(5):
     print("contando:", i)
+    
 
-# while
 senha = ""
 while senha != "Splendore":
     senha = input("Digite a senha: ")

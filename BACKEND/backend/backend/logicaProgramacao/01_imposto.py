@@ -1,4 +1,4 @@
-salario = float(input("Informe seu salário mensal: R$ "))
+salario = int(input("Informe seu salário mensal: R$ "))
 
 salario_anual = salario * 12
 
