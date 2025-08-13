@@ -11,7 +11,7 @@ def excluir():
         produtos.remove(produto)
         print("Ok")
     else:
-        print("Excluido")
+        print("Nao tem")
 
 def listar():
     print("Lista dos produtos:", produtos)
@@ -25,7 +25,7 @@ while opcao != "4":
     print("4. Sair")
    
 
-    opcao = input("Opcao: ").upper()
+    opcao = input("Opcao: ")
 
     match opcao:
         case "1":
