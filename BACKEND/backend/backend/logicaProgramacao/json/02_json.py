@@ -4,7 +4,7 @@ livros = []
 try:
     with open('biblioteca.json', 'r') as arquivo:
         livros = json.load(arquivo)
-        print("Arquivo carregado!")
+        print("Arquivo carregado !")
 except FileNotFoundError:
     print("Arquivo nao encontrado")
 
@@ -42,7 +42,6 @@ novo_livro = {
     "idioma": idioma
 }
 
-# Escrever no arquivo json
 livros.append(novo_livro)
 with open('biblioteca.json', 'w') as arquivo:
     json.dump(livros, arquivo, indent=4)
