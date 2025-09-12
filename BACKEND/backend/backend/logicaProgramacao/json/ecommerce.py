@@ -19,6 +19,7 @@ def carregar_arquivo(Ecommerce):
 def salvar_arquivo(nome, dados):
     with open(nome, 'w') as arquivo:
         json.dump(dados, arquivo, indent=4)
+        
 
 def exibir_menu():
     print("\n--- Gestão de E-commerce ---")
@@ -40,6 +41,7 @@ def cadastrar_categoria():
     }
 
     categorias.append(armazem_categoria)
+    salvar_arquivo('categorias.json', categorias)
     print("Categoria salva!")
 
 def cadastrar_produto():
@@ -57,6 +59,7 @@ def cadastrar_produto():
     }
 
     produtos.append(armazem_produto)
+    salvar_arquivo('produtos.json', produtos) 
     print("Produto salvo!")
 
 def listar_produtos():
@@ -68,6 +71,9 @@ def listar_categorias():
     print("CATEGORIAS CADASTRADAS:" if categorias else "Nenhuma categoria cadastrada.")
     for c in categorias:
         print(f"- ID: {c['id_categoria']} / Nome: {c['nome_categoria']}")
+
+categorias = carregar_arquivo('categorias.json')
+produtos = carregar_arquivo('produtos.json')
 
 while True:
     exibir_menu()
