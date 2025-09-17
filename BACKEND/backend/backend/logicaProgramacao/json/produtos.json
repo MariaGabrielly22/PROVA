@@ -1,14 +1,14 @@
 [
     {
-        "nome_produto": "gaby",
+        "nome_produto": "f",
         "id_produto": 1,
-        "preco": "22",
+        "preco": "11",
         "id_categoria_associada": "1"
     },
     {
-        "nome_produto": "GG",
-        "id_produto": 1,
-        "preco": "33",
-        "id_categoria_associada": "112"
+        "nome_produto": "g",
+        "id_produto": 2,
+        "preco": "22",
+        "id_categoria_associada": "2"
     }
 ]
