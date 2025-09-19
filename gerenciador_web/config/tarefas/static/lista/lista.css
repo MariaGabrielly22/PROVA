@@ -1,0 +1,77 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo */
+body {
+    background-color: #ffe4ec; /* rosa claro */
+    color: #333;
+    padding: 20px;
+}
+
+/* Título geral */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #d81b60; /* rosa forte */
+}
+
+/* Card da tarefa */
+.tarefa {
+    background: #fff;
+    border: 2px solid #f48fb1;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px auto;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Título da tarefa (fica em cima da descrição) */
+.tarefa h2 {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ad1457;
+}
+
+/* Descrição */
+.tarefa p {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffbdbd;
+    font-size: 1rem;
+}
+
+/* Data */
+.tarefa small {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Concluída */
+.tarefa.concluída {
+    background: #fce4ec;
+    border-color: #d81b60;
+}
+
+.tarefa.concluída h2 {
+    text-decoration: line-through;
+    color: #d81b60;
+}
+
+/* Mensagem sem tarefas */
+p {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 30px;
+    color: #d81b60;
+}
