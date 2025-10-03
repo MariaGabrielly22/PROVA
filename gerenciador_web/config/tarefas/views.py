@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Tarefa
 
 # from .models import Tarefa
@@ -21,3 +21,9 @@ def listar_tarefas(request):
 
     # 3. Renderizamos o template, passando a requisiçao e o contexto com os dados.
     return render(request, 'tarefas/lista.html', contexto)
+
+def detalhe_tarefa(request, tarefa_id):
+    # Busca uma tarefa pelo id 
+    # Se nao encontrar retorna um erro 404
+    tarefa = get_object_or_404 (Tarefa, pk= tarefa_id)
+    return render (request, 'tarefas/detalhe.html', {'tarefa': tarefa})
