@@ -1,0 +1,95 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffcdd2; /* Rosa claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px 20px 20px;
+    min-height: 100vh;
+}
+
+/* Título no topo */
+h1 {
+    color: #d81b60; /* Rosa escuro */
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    max-width: 400px;
+    margin: 0 auto 20px; /* Margem inferior para separar do link */
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #d81b60;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Campos */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #f8bbd0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.2s ease;
+    resize: vertical;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #f48fb1;
+    box-shadow: 0 0 0 2px rgba(244, 143, 177, 0.2);
+}
+
+/* Botão */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #c2185b;
+}
+
+/* Link "Cancelar" abaixo do formulário */
+a {
+    display: block;
+    text-align: center;
+    color: #d81b60;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+a:hover {
+    color: #c2185b;
+    text-decoration: underline;
+}

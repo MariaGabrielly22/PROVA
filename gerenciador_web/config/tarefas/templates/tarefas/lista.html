@@ -9,6 +9,7 @@
 <body>
     
     <h1> Gerenciador de Tarefas Web</h1>
+    <a href="{% url 'adicionar_tarefa' %}"><strong>+ Adicionar Tarefa</strong></a>
     <hr>
     {% for tarefa in minhas_tarefas %}
         <div class="tarefa {% if tarefa.concluída %}concluída{% endif %}">
