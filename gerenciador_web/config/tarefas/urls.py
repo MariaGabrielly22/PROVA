@@ -7,4 +7,7 @@ urlpatterns = [
 
     # Adicionar Tarefa
     path('adicionar/', views.adicionar_tarefa, name = 'adicionar_tarefa'),
+
+    # Alterar tarefa
+    path('<int:tarefa_id>/alterar/', views.alterar_tarefa, name='alterar_tarefa'),
 ]
